@@ -2,23 +2,17 @@ const express = require('express');
 const axios = require('axios');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-// const { Configuration, OpenAIApi } = require('openai');require('dotenv').config(); // OpenAI API 키 환경 변수 로드
-const { OpenAIApi } = require('openai'); // OpenAI API 키 환경 변수 로드
-require('dotenv').configDotenv();
+const { Configuration, OpenAIApi } = require('openai');require('dotenv').config(); // OpenAI API 키 환경 변수 로드
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 //const OPENAI_API_KEY = process.env.OPENAI_API_KEY; // OpenAI API 키
 
-//const configuration  = new Configuration({
-//    api_key: process.env.OPENAI_API_KEY
-//});
-
-//const openai = new OpenAIApi(configuration);
-
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY
+const configuration  = new Configuration({
+    api_key: process.env.OPENAI_API_KEY
 });
+
+const openai = new OpenAIApi(configuration);
 
 // 미들웨어 설정
 app.use(cors()); // CORS 설정: 모든 도메인 허용 (배포 시 특정 도메인만 허용하는 것이 안전함. 예: Unity WebGL 빌드의 도메인)
