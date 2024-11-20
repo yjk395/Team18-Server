@@ -23,7 +23,7 @@ app.use(bodyParser.json()); // JSON 파싱 설정
 // ChatGPT에 요청을 보내는 함수
 async function getChatGPTResponse(messages) {
     try {
-        const response = await openai.createChatCompletion({
+        const response = await openai.chat.completions.create({
             model: 'gpt-4o', // 기본 모델 설정
             messages: messages,
             max_tokens: 1000, // 기본 토큰 설정
