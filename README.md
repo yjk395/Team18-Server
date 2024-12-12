@@ -21,7 +21,7 @@ Team18-Server/
 ├── index.js            # Node.js 서버의 메인 파일
 ├── package.json        # 프로젝트의 메타데이터와 의존성 관리
 ├── package-lock.json   # 프로젝트의 메타데이터와 의존성 관리
-└── vercel.json         # Vercel 플랫폼을 통한 서버를 배포 관련 설정
+└── vercel.json         # Vercel 플랫폼을 통한 서버 배포 관련 설정
 ```
 
 <br>
