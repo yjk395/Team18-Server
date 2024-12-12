@@ -35,18 +35,20 @@ Team18-Server/
    ```
    
 2. **.env 파일 작성**
+  .env 파일을 생성하고 자신의 OpenAI API KEY를 작성한다.
    ```
    OPENAI_API_KEY='your-api-key'
    ```
-3. **Node.js 서버 실행**
+4. **Node.js 서버 실행**
    ```
    node index.js
    ```
+   `Proxy server running on http://localhost:PORT` 라는 메시지가 뜨면 서버가 성공적으로 실행 중이라는 의미이다.
    
 <br>
 
 ## How to Test
-다음은 서버 실행 후 curl을 사용하여 테스트할 수 있는 명령어이다.
+다음은 서버 실행 후 curl을 사용하여 POST 요청을 테스트하는 명령어이다.
 ```
 curl -X POST http://localhost:3000/chatgpt \
 -H "Content-Type: application/json" \
@@ -57,3 +59,4 @@ curl -X POST http://localhost:3000/chatgpt \
     ]
 }'
 ```
+명령어를 실행하고 `{"response": "Sure! Here's one for you: \n\nWhy don't skeletons fight each other?\n\nThey don't have the guts."}` 와 같이 OpenAI 응답 형식으로 정상적으로 반환되는 것으로 테스트할 수 있다.
