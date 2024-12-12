@@ -11,7 +11,7 @@
 <!--<img src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white"/></a>-->
 
 ### 🔧 주요 기능
-Unity 클라이언트의 요청을 OpenAI API에 전달하고 응답을 다시 클라이언트에 반환
+Unity 클라이언트의 요청을 OpenAI API에 전달하고 응답을 다시 클라이언트에 반환한다.
 
 <br>
 
